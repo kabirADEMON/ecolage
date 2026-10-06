@@ -1,5 +1,6 @@
 # Écolage · la scolarité de votre école, sans cahier
 
+[![CI](https://github.com/kabirADEMON/ecolage/actions/workflows/ci.yml/badge.svg)](https://github.com/kabirADEMON/ecolage/actions/workflows/ci.yml)
 ![Node](https://img.shields.io/badge/Node.js-22-5FA04E?logo=nodedotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Drizzle-4169E1?logo=postgresql&logoColor=white)
@@ -90,7 +91,7 @@ npm run build && npm run test:e2e   # 9 parcours dans un vrai navigateur
 
 Les parcours de bout en bout jouent une rentrée complète. La directrice crée l'école, une classe et son échéancier, inscrit un élève avec une réduction, encaisse et imprime le reçu, puis ajoute un caissier. Le caissier se connecte avec son mot de passe provisoire, n'a pas accès à l'équipe, se voit refuser un trop-perçu et encaisse en Mobile Money. Le parent paie depuis son téléphone et télécharge son reçu. Enfin, la directrice annule un reçu en double, vérifie la caisse du jour et importe une liste d'élèves.
 
-Le workflow d'intégration continue est prêt dans `docs/ci.yml` : il s'active en le plaçant dans `.github/workflows/`.
+La CI GitHub Actions lance le formatage, les types, les tests de l'API, la compilation et les tests de bout en bout à chaque push.
 
 ## Déploiement
 
