@@ -1,0 +1,7 @@
+node_modules
+dist
+.data
+apps/api/drizzle
+package-lock.json
+playwright-report
+test-results
